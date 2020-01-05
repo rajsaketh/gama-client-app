@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectResolver } from './project-resolver.service';
-import { HomeComponent } from './page/home.component';
+import { ThemeComponent } from './page/theme.component';
 import { ProjectDetailsComponent } from './page/project-details/project-details.component';
-
+import { ThemeListComponent } from './page/theme-list/theme-list.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'theme',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: HomeComponent,
+    path: 'theme',
+    component: ThemeComponent,
     
   },
   {
     path: 'projects/:id',
-    component: ProjectDetailsComponent,
+    component: ThemeListComponent,
     resolve: {
       project: ProjectResolver
     }
@@ -28,4 +28,4 @@ export const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomeRoutingModule {}
+export class ThemeRoutingModule {}
