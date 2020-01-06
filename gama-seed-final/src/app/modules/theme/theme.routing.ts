@@ -1,26 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProjectResolver } from './project-resolver.service';
+
 import { ThemeComponent } from './page/theme.component';
-import { ProjectDetailsComponent } from './page/project-details/project-details.component';
+
 import { ThemeListComponent } from './page/theme-list/theme-list.component';
+import { ThemeCartComponent } from './page/theme-cart/theme-cart.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'theme',
+    redirectTo: 'list',
     pathMatch: 'full'
   },
   {
-    path: 'theme',
+    path: '',
     component: ThemeComponent,
-    
-  },
-  {
-    path: 'projects/:id',
-    component: ThemeListComponent,
-    resolve: {
-      project: ProjectResolver
-    }
+    children: [
+      {
+        path: 'cart',
+        component: ThemeCartComponent
+      },
+      {
+        path: 'list',
+        component: ThemeListComponent
+      }
+    ]
   }
 ];
 

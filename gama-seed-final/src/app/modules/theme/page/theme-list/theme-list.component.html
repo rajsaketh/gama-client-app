@@ -1,19 +1,169 @@
-<mat-card class="custom-card front">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>{{ (project$ | async)?.title }}</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image [src]="(project$ | async)?.thumbnail" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button class="active" mat-button>READ MORE</button>
-    <button class="active" mat-button>{{ (project$ | async)?.id }}</button>
-  </mat-card-actions>
-</mat-card>
+<div class="wrapper">
+	
+
+	<div class="content">
+		<!-- content here -->
+		<div class="product-grid product-grid--flexbox">
+			<div class="product-grid__wrapper">
+				<!-- Product list start here -->
+
+				<!-- Single product -->
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\OnlineFoodDelivery\Home.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Online Food Delivery</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end Single product -->
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\GroceryShooping\Login.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Grocery Shopping</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\ContentManagment\ScribbleUpHome.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Content Mangement</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\OnlineBanking\Userhomepage.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Online Banking</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\Automotive Parts\Home.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Automotive Parts</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\online food delivery 2\Home.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Online Food Delivery</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\NetBanking\home.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Banking</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\GroceryCart\Category.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Grocery Cart</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-grid__product-wrapper">
+					<div class="product-grid__product">
+						<div class="product-grid__img-wrapper">			
+							<img src="\assets\Online Notes\IntoductionPage.png" alt="Img" class="product-grid__img" />
+						</div>
+						<span class="product-grid__title">Online Notes</span>
+						<span class="product-grid__price">1.399€</span>
+						<div class="product-grid__extend-wrapper">
+							<div class="product-grid__extend">
+								<p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+								<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+
+</div>
